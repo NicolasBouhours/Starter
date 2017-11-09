@@ -2,10 +2,10 @@
   "name": "express-starter",
   "version": "0.0.1",
   "description": "Node.js and express starter",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "lint": "esw index.js",
+    "start": "nodemon server.js",
+    "lint": "esw --fix server.js",
     "lint:watch": "npm run lint -- --watch",
     "test": "npm run test"
   },
@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/NicolasBouhours/Starter#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "eslint": "^4.10.0",
