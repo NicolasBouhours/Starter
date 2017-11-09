@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "lint": "esw --fix server.js",
+    "lint": "esw *.js ./",
     "lint:watch": "npm run lint -- --watch",
     "test": "npm run test"
   },
