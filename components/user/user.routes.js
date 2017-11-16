@@ -7,6 +7,6 @@ const router = express.Router();
 /**
  * Get
  */
-router.get('/', userController.list());
+router.get('/', userController.list);
 
 module.exports = router;

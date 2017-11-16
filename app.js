@@ -5,8 +5,21 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const db = require('./database');
+
 const authRoutes = require('./components/auth/auth.routes');
 const userRoutes = require('./components/user/user.routes');
+
+/**
+ * Connect to database
+ */
+(async () => {
+  try {
+    await db.sequelize.authenticate();
+  } catch(err) {
+    console.log('Cannot connect to database');
+  }
+})();
 
 /**
  * Express options

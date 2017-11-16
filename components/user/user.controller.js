@@ -2,7 +2,7 @@
  * Handle user sign in action
  */
 function list(req, res) {
-  return res.send('Get user');
+  return res.send('User list');
 }
 
 module.exports = {
